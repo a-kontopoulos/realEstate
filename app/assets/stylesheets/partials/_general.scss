@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+.content {
+  flex: 1 0 auto;
+}
+
+footer .footer {
+  background-color: blue;
+  flex-shrink: 0;
+
+}
