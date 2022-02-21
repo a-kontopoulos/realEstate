@@ -3,5 +3,4 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 // Include bootstrap in the app
-import "popper"
-import "bootstrap"
+import * as bootstrap from "bootstrap"
