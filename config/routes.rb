@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get 'static_pages/services'
   get 'static_pages/contact'
+
+  resources :users
+  #route to signup new user
+  get 'signup', to: 'users#new'
+
 end
