@@ -13,7 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ /* ==========================================================================
+    BOOTSTRAP
+    ========================================================================== */
 
- // here your custom bootstrap variables...
+  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
+
+ /* ==========================================================================
+    PARTIALS
+    ========================================================================== */
+
+ @import "partials/mixins";
  @import "partials/general";
+ @import "partials/signUpForm";

@@ -1,0 +1,32 @@
+@import "partials/mixins";
+
+
+.signUpForm  {
+  background-color: purple;
+  margin: 2% 2% 2% 2%;
+  max-width: 75%;
+}
+
+.signUpFormContent {
+  max-width: 50%;
+}
+
+@include mobile {
+  .signUpForm  {
+    margin: 0 0 0 0;
+    max-width: 100%;
+   }
+
+  .signUpFormContent {
+    max-width: 100%;
+   }
+ }
+
+@include tablet {
+
+}
+
+@include desktop {
+
+
+}
