@@ -4,14 +4,13 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 .content {
   flex: 1 0 auto;
 }
 
-footer .footer {
-  background-color: blue;
+ footer {
+   
   flex-shrink: 0;
 
 }
