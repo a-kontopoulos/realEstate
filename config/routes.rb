@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   get 'static_pages/services'
   get 'static_pages/contact'
 
+  get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy
+  delete '/logout', to: 'sessions#destroy'
 
   resources :users
-  #route to signup new user
+  # route to signup new user
   get 'signup', to: 'users#new'
 
 end

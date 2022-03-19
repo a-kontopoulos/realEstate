@@ -29,7 +29,8 @@
           </ul>
         </li>
         <li class="nav-item header__item">
-          <a class="nav-link border-start ps-5">Log In</a>
+          <%= link_to 'Log In', login_path, class: "nav-link border-start ps-5" %>
+          <!-- <a class="nav-link border-start ps-5">Log In</a> -->
         </li>
         <li class="nav-item header__item">
         <%= link_to new_user_path, class: "nav-link" do %>
