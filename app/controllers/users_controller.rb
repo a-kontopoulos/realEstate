@@ -17,15 +17,18 @@ class UsersController < ApplicationController
     #checks if user can be saved using the provided parameters
     if @user.save
       #automatically logs user in
+      log_in @user
       respond_to do |format|
-      #redirects user to index page and displays message welcoming the user
-      format.html { redirect_to user_path(@user), notice: 'Welcome to Zinoviev Properties' }
+        #redirects user to index page and displays message welcoming the user
+        format.html { redirect_to user_path(@user), notice: 'Welcome to Zinoviev Properties' }
+        flash[:success] = "Welcome to the Sample App!"
       end
     else
       #if user not successfully created render to new path
       render 'new'
     end
   end
+
 
   private
 
