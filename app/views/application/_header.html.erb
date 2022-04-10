@@ -33,7 +33,7 @@
           <%= link_to "Log out", logout_path, data: { turbo_method: :delete } , class: "nav-link border-start ps-5" %>
          </li>
          <li>
-           <%= link_to "Profile", user_path(current_user) %>
+           <%= link_to "Profile", user_path(current_user), class: "nav-link"  %>
         </li>
           </ul>
         </li>
@@ -41,12 +41,14 @@
         <li class="nav-item header__item">
           <%= link_to 'Log In', login_path, class: "nav-link border-start ps-5" %>
         </li>
-        <% end %>
         <li class="nav-item header__item">
         <%= link_to new_user_path, class: "nav-link" do %>
         <button type="button" name="button" class="btn btn-outline-primary"> Create Your Account  </button>
         <% end %>
         </li>
+        <% end %>
+
+
       </ul>
 
     </div>
